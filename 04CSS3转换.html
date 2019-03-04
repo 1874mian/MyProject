@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3转换</title>
+
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto 0;
+            /* 样式从一种过渡到另一种的效果 */
+            transition: all 3s; 
+        }
+
+        .translate {
+            background-color: red;
+        }
+        .translate:hover {
+            transform: translate(50px, 50px);
+        }
+
+        .rotate {
+            background-color: green;
+        }
+        .rotate:hover {
+            transform: rotate(45deg);
+        }
+
+        .scale {
+            background-color: blue;
+        }
+
+        .scale:hover {
+            transform: scale(1.5, 1.5);
+        }
+
+        .skew {
+            background-color: purple;
+        }
+        .skew:hover {
+            transform: skewX(30deg);
+        }
+
+        section {
+            width: 100px;
+            height: 100px;
+            background-color: deeppink;
+            /* transition: width 2s, height 2s; */
+            transition: all 2s 2s;
+        }
+        section:hover {
+            width: 500px;
+            height: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="translate"></div>
+
+    <div class="rotate"></div>
+
+    <div class="scale"></div>
+
+    <div class="skew"></div>
+
+    <section></section>
+</body>
+</html>

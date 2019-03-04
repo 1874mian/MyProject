@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>多背景</title>
+
+    <style>
+        div {
+            width: 500px;
+            height: 300px;
+            /* 盒子水平居中：必须是块元素，必须有宽度，然后指定在水平方向上的margin值为auto即可 */
+            margin: 30px auto;
+            /* 文字水平居中 */
+            text-align: center;
+            background-color: pink;
+
+            /* 多背景图片：使用逗号分隔，放在前面的图片叠放次序越高 */
+            background-image: url("./img/bq6.png"), url("./img/flower.png"), url("./img/green.jpg");
+            background-repeat: no-repeat, no-repeat, no-repeat;
+            background-position: left top, right top, top;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1>悯农</h1>
+        <p>锄禾日当午</p>
+        <p>汗滴禾下土</p>
+        <p>谁知盘中餐</p>
+        <p>粒粒皆辛苦</p>
+    </div>
+</body>
+
+</html>
